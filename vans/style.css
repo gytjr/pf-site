@@ -1,0 +1,589 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.after::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* -----------------header----------------- */
+
+.headerwrap {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    background: #fff;
+    transition: 0.5s;
+}
+.headerwrap.nav-up {
+    transform: translateY(-100%);
+}
+
+.header {
+    position: relative;
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.header .logo {
+    width: 110px;
+    height: 45px;
+    float: left;
+    background: url(https://gytjr.github.io/pf-img/vans/logo.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.header .menu {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.header .menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .menu ul li {
+    padding: 0 20px;
+    color: #1c1c1c;
+    font-weight: 500;
+    border-right: 1px solid #a5a5a5;
+    font-size: 12px;
+}
+
+.header .menu ul li a {
+    display: block;
+    transition: 0.3s;
+}
+
+.header .menu ul li a:hover {
+    color: #d41f1f;
+}
+
+.header .menu ul li:last-of-type {
+    padding: 0 0 0 20px;
+    border: none;
+}
+
+/* .header .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 30px;
+}
+
+.header .btn:hover {
+    animation: btn 1s alternate infinite;
+} */
+
+@keyframes btn {
+    0%  {
+        transform: scale(1) translateY(-50%);;
+    }
+
+    100% {
+        transform: scale(0.9) translateY(-50%);
+    }
+}
+
+/* -----------------visual----------------- */
+
+.visual .visualimg {
+    position: relative;
+    width: 100%;
+    height: 795px;
+    background: url(https://gytjr.github.io/pf-img/vans/visual.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.visual p {
+    position: absolute;
+    color: #fff;
+    font-size: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px 5px #000;
+    font-weight: 700;
+}
+
+/* -----------------contents----------------- */
+
+.contents {
+    margin: 140px auto;
+    overflow: hidden;
+}
+
+/* -----------------con1----------------- */
+
+.con1 .con1title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.con1 .con1btn {
+    width: 400px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.con1btn li a{
+    display: block;
+    padding: 10px 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.con1btn li a:hover{
+    background: #d41f1fe0;
+    color: #fff;
+}
+
+.con1btn li.on a {
+    background: #d41f1f;
+    color: #fff;
+}
+
+.con1box>div {
+    display: none;
+    position: relative;
+}
+.con1box>div.show {
+    display: block;
+}
+
+.con1box>div>.img{
+    width: 50%;
+    height: 640px;
+}
+
+.con1img {
+    background-size: cover;
+}
+
+.old1 .oimg {
+    background: url(https://gytjr.github.io/pf-img/vans/con1o.jpg) no-repeat center;
+}
+
+.con1text {
+    height: 640px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    padding: 80px 340px 0 87px;
+    box-sizing: border-box;
+}
+
+.con1text .title{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.con1text .subtitle{
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(116, 116, 116);
+    margin: 10px 0;
+}
+
+.con1text .price {
+    font-size: 38px;
+    color: #d41f1f;
+    font-weight: 600;
+}
+
+.con1text .text {
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.con1text .btn a{
+    text-align: center;
+    display: inline-block;
+    padding: 17px 25px;
+    border: 1px solid #a5a5a5;
+    color: #a5a5a5;
+    box-sizing: border-box;
+    font-weight: 300;
+    margin: 39px 0;
+    transition: 0.3s;
+}
+
+.con1text .oimg-t {
+    width: 524.5px;
+    height: 161px;
+}
+
+.con1text .oimg-t>div {
+    width: 162px;
+    float: left;
+    margin-right: 17.25px;
+    height: 162px;
+    transition: 0.9s;
+}
+
+.con1text .oimg-t>.opreview1 {
+    background: url(https://gytjr.github.io/pf-img/vans/op1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.con1text .oimg-t>.opreview2 {
+    background: url(https://gytjr.github.io/pf-img/vans/op2.jpg) no-repeat center;
+    background-size: cover;
+}
+.con1text .oimg-t>.opreview3 {
+    background: url(https://gytjr.github.io/pf-img/vans/op3.jpg) no-repeat center;
+    background-size: cover;
+    margin-right: 0;
+}
+
+/* -----------------o img hover----------------- */
+
+.con1text .oimg-t>.opreview1:hover {
+    background: url(https://gytjr.github.io/pf-img/vans/op1h.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.con1text .oimg-t>.opreview2:hover {
+    background: url(https://gytjr.github.io/pf-img/vans/op2h.jpg) no-repeat center;
+    background-size: cover;
+}
+.con1text .oimg-t>.opreview3:hover {
+    background: url(https://gytjr.github.io/pf-img/vans/op3h.jpg) no-repeat center;
+    background-size: cover;
+    margin-right: 0;
+}
+
+/* -----------------o img hover----------------- */
+
+.slip1 .simg {
+    background: url(https://gytjr.github.io/pf-img/vans/con1s.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+.slidebox {
+    position: relative;
+}
+
+.slidebox ion-icon {
+    position: absolute;
+    font-size: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.slidebox .iconleft {
+    left: -40px;
+}
+
+.slidebox .iconright {
+    right: -40px;
+}
+
+.con1text .sslide {
+    width: 524.5px;
+    height: 161px;
+    overflow: hidden;
+}
+
+.con1text .simg-t {
+    width: 879px;
+    margin-left: -34%;
+}
+
+.con1text .simg-t>div {
+    width: 162px;
+    float: left;
+    margin-right: 17.25px;
+    height: 162px;
+    transition: 0.9s;
+}
+
+.con1text .simg-t>.spreview1 {
+    background: url(https://gytjr.github.io/pf-img/vans/sp1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.con1text .simg-t>.spreview2 {
+    background: url(https://gytjr.github.io/pf-img/vans/sp2.jpg) no-repeat center;
+    background-size: cover;
+}
+.con1text .simg-t>.spreview3 {
+    background: url(https://gytjr.github.io/pf-img/vans/sp3.jpg) no-repeat center;
+    background-size: cover;
+}
+.con1text .simg-t>.spreview4 {
+    background: url(https://gytjr.github.io/pf-img/vans/sp4.jpg) no-repeat center;
+    background-size: cover;
+}
+.con1text .simg-t>.spreview5 {
+    background: url(https://gytjr.github.io/pf-img/vans/sp5.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+/* -----------------sp img hover----------------- */
+
+.con1text .simg-t>.spreview1:hover {
+    background: url(https://gytjr.github.io/pf-img/vans/sp1h.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.con1text .simg-t>.spreview2:hover {
+    background: url(https://gytjr.github.io/pf-img/vans/sp2h.jpg) no-repeat center;
+    background-size: cover;
+}
+.con1text .simg-t>.spreview3:hover {
+    background: url(https://gytjr.github.io/pf-img/vans/sp3h.jpg) no-repeat center;
+    background-size: cover;
+}
+.con1text .simg-t>.spreview4:hover {
+    background: url(https://gytjr.github.io/pf-img/vans/sp4h.jpg) no-repeat center;
+    background-size: cover;
+}
+.con1text .simg-t>.spreview5:hover {
+    background: url(https://gytjr.github.io/pf-img/vans/sp5h.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* -----------------con2----------------- */
+
+.con2 {
+    margin: 140px auto;
+}
+
+.con2 .logo {
+    width: 83px;
+    height: 29px;
+    background: url(https://gytjr.github.io/pf-img/vans/logo2.png) no-repeat center;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.con2 .con2textbox {
+    width: 50%;
+    float: left;
+    height: 945px;
+    position: relative;
+}
+
+.con2 .con2text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 340px;
+    box-sizing: border-box;
+}
+
+.con2 .con2text>.title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 67px;
+}
+
+.con2 .con2text .text {
+    margin: 30px 0;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.con2 .btn a{
+    text-align: center;
+    display: inline-block;
+    padding: 17px 25px;
+    border: 1px solid #a5a5a5;
+    color: #a5a5a5;
+    box-sizing: border-box;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.con2 .con2img {
+    width: 50%;
+    height: 945px;
+    background: url(https://gytjr.github.io/pf-img/vans/con2.jpg) no-repeat center;
+    background-size: cover;
+    float: left;
+    position: sticky;
+}
+
+/* -----------------con3----------------- */
+
+
+.con3box {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.con3box>div>div {
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+.con3 .title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.con3 .subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 17px 0;
+    color: #a5a5a5;
+}
+
+.con3 p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.con3box .textbox {
+    background: #fff;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.foot .img {
+    background: url(https://gytjr.github.io/pf-img/vans/foot.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.wall .img {
+    background: url(https://gytjr.github.io/pf-img/vans/wall.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.con3 li {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+}
+
+.con3 li a{
+    display: inline-block;
+    padding: 10px 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    color: #a5a5a5;
+    transition: 0.3s;
+}
+
+.btn>a:hover{
+    border: 1px solid #d41f1f;
+    box-sizing: border-box;
+    color: #fff;
+    background: #d41f1f;
+}
+
+.footerwrap {
+    padding: 25px 0;
+    width: 100%;
+    background: #1c1c1c;
+}
+
+.footer {
+    width: 1240px;
+    margin: 0 auto;
+    color: #8d9293;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.footer>div {
+    width: 32%;
+    height: 135px;
+    float: left;
+    margin-right: 2%;
+    border-right: 1px solid #8d9293;
+    box-sizing: border-box;
+}
+
+.footer>div:last-of-type {
+    margin-right: 0;
+    border-right: 0;
+}
+
+.footer .title {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer .sns ul{
+     display: flex;
+     font-size: 30px;
+}
+
+.footer .sns ul li{
+    margin-right: 10px;
+}
+
+.footer .sns ul li:hover {
+    color: #fff;
+}
+
+.footer2 {
+    width: 1240px;
+    margin: 20px auto 0;
+}
+
+.footer2 .logo {
+    width: 10%;
+    height: auto;
+    float: left;
+}
+
+.footer2 .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer2 .text {
+    float: left;
+    margin-left: 20px;
+    color: #8d9293;
+    font-size: 14px;
+    font-weight: 200;
+}

@@ -1,0 +1,327 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.after::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* -----------------header----------------- */
+
+.headerwrap {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    background: #fff;
+    transition: 0.5s;
+}
+.headerwrap.nav-up {
+    transform: translateY(-100%);
+}
+
+.header {
+    position: relative;
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.header .logo {
+    width: 110px;
+    height: 45px;
+    float: left;
+    background: url(https://gytjr.github.io/pf-img/vans/logo.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.header .menu {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.header .menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .menu ul li {
+    padding: 0 20px;
+    color: #1c1c1c;
+    font-weight: 500;
+    border-right: 1px solid #a5a5a5;
+    font-size: 12px;
+}
+
+.header .menu ul li a {
+    display: block;
+    transition: 0.3s;
+}
+
+.header .menu ul li a:hover {
+    color: #d41f1f;
+}
+
+.header .menu ul li:last-of-type {
+    padding: 0 0 0 20px;
+    border: none;
+}
+
+/* visual */
+
+.visual {
+    padding-top: 85px;
+    background: #fff;
+}
+
+.visualimg {
+    position: relative;
+    width: 1240px;
+    margin: 0 auto;
+    height: 350px;
+    background : url(https://gytjr.github.io/pf-img/vans/subvisual.jpg) no-repeat center;
+    /* background-size: cover; */
+}
+
+.visualimg p {
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px 5px #000;
+    font-weight: 700;
+}
+
+/* product */
+
+.product {
+    text-align: center;
+    padding-top: 100px;
+    width: 1240px;
+    margin: 0 auto;
+}
+
+
+.p_title {
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+}
+
+.p_title::after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 100px;
+    background: #d41f1f;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+}
+
+.product .product_wraper {
+    margin: 70px 0;
+}
+
+.product .product_wraper li{
+    background: #fff;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.product .product_wraper .name {
+    font-weight: 400;
+}
+
+.product .product_wraper .price {
+    margin: 10px 0;
+    color: #d41f1f;
+    font-weight: 700;
+}
+
+.product .product_wraper .icon {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content : center;
+}
+
+.product .product_wraper .icon>div {
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+    border-radius: 50%;
+    background: #d8d8d8;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.product .product_wraper .icon>div:hover {
+    background: #d41f1f;
+}
+
+.product .product_wraper .icon i {
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+}
+
+.product .product_wraper .like.on {
+    background: #d41f1f;
+}
+
+.product .product_wraper .icon>div:first-of-type {
+    margin-right: 15px;
+}
+
+.product .product_wraper>li {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+
+.product .product_wraper>li:last-of-type{
+    margin-right: 0;
+}
+
+.product .product_wraper>li .img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 10px;
+}
+
+.product .oldskool_wrap>li:nth-of-type(1) .img{
+    background: url(https://gytjr.github.io/pf-img/vans/op1.jpg) no-repeat center;
+    background-size:  cover;
+}
+
+.product .oldskool_wrap>li:nth-of-type(2) .img{
+    background: url(https://gytjr.github.io/pf-img/vans/op2.jpg) no-repeat center;
+    background-size:  cover;
+}
+
+.product .oldskool_wrap>li:nth-of-type(3) .img{
+    background: url(https://gytjr.github.io/pf-img/vans/op3.jpg) no-repeat center;
+    background-size:  cover;
+}
+
+.product .slipon_wrap>li:nth-of-type(1) .img{
+    background: url(https://gytjr.github.io/pf-img/vans/sp1.jpg) no-repeat center;
+    background-size:  cover;
+}
+
+.product .slipon_wrap>li:nth-of-type(2) .img{
+    background: url(https://gytjr.github.io/pf-img/vans/sp2.jpg) no-repeat center;
+    background-size:  cover;
+}
+
+.product .slipon_wrap>li:nth-of-type(3) .img{
+    background: url(https://gytjr.github.io/pf-img/vans/sp3.jpg) no-repeat center;
+    background-size:  cover;
+}
+
+
+/* footer */
+
+.footerwrap {
+    padding: 25px 0;
+    width: 100%;
+    background: #1c1c1c;
+}
+
+.footer {
+    width: 1240px;
+    margin: 0 auto;
+    color: #8d9293;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.footer>div {
+    width: 32%;
+    height: 135px;
+    float: left;
+    margin-right: 2%;
+    border-right: 1px solid #8d9293;
+    box-sizing: border-box;
+}
+
+.footer>div:last-of-type {
+    margin-right: 0;
+    border-right: 0;
+}
+
+.footer .title {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer .sns ul{
+     display: flex;
+     font-size: 30px;
+}
+
+.footer .sns ul li{
+    margin-right: 10px;
+}
+
+.footer .sns ul li:hover {
+    color: #fff;
+}
+
+.footer2 {
+    width: 1240px;
+    margin: 20px auto 0;
+}
+
+.footer2 .logo {
+    width: 10%;
+    height: auto;
+    float: left;
+}
+
+.footer2 .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer2 .text {
+    float: left;
+    margin-left: 20px;
+    color: #8d9293;
+    font-size: 14px;
+    font-weight: 200;
+}
