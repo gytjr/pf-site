@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="logo">
+            <a href="#">
+                <img src="img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav" id="nav">
+            <ul class="navul">
+                <li class="on"><a href="#">Main</a></li>
+                <li><a href="#">Stadium</a></li>
+                <li><a href="#">Player</a></li>
+                <li><a href="#">Uniform</a></li>
+                <li><a href="#">Partner</a></li>
+            </ul>
+        </div>
+        <div class="contents">
+            <div class="con1 main">
+                <div class="con1box">
+                    <div class="con1text">
+                        <p class="maintitle">유벤투스 FC</p>
+                        <p class="subtitle">Juventus<br>Football Club S.p.A.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="con2">
+                <div class="contentstitle con2title">구장</div>
+                <div class="con2box after">
+                    <div class="con2left"></div>
+                    <div class="con2right">
+                        <ul class="con2right1 after">
+                            <li class="con2righttext on">
+                                <p class="title">구장</p>
+                                <p class="subtitle">알리안츠 스타디움</p>
+                                <p class="text">이탈리아 피에몬테 주 토리노 시 가에타노 시레아 거리 50에 위치한
+                                    이탈리아 프로축구 세리에 A 리그의 유벤투스 FC가 사용하는 축구 전용 경기장입니다.
+                                    알리안츠 스타디움은 시야 문제를 완벽히 해결하였으며 친환경 공법을 적용하여 건설했습니다.
+                                    좌석수는 41,507석이며, 구장 내에는 유벤투스 구단을 기념하는 박물관이 마련되어 있습니다.
+                                    UEFA 명칭은 유벤투스 스타디움(Juventus Stadium) 입니다.</p>
+                            </li>
+                            <li>
+                                <div id="map"></div>
+                            </li>
+                        </ul>
+                        <ul class="con2nav after">
+                            <li class="on"><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="con3">
+                <div class="contentstitle con3title">선수</div>
+                <div class="con3box">
+                    <ul class="player">
+                        <li class="forward">
+                            <a href="#">FORWARD</a>
+                            <div class="fwbox ulbox">
+                                <span class="material-icons md-48 left" id = "btn">keyboard_arrow_left</span>
+                                <ul class="sub after">
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/RONALDO.png" alt="">
+                                        </div>
+                                        <p>크리스티아누<br>호날두</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no10.png" alt="">
+                                        </div>
+                                        <p>파울로<br>디발라</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no11.png" alt="">
+                                        </div>
+                                        <p>더글라스<br>코스타</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no16.png" alt="">
+                                        </div>
+                                        <p>후안<br>콰드라도</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no21.png" alt="">
+                                        </div>
+                                        <p>곤살로<br>이과인</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no33.png" alt="">
+                                        </div>
+                                        <p>페데리코<br>베르나르데스키</p>
+                                    </li>
+                                </ul>
+                                <span class="material-icons md-48 right">keyboard_arrow_right</span>
+                            </div>
+                        </li>
+                        <li class="mf"><a href="#">MIDFIELDER</a>
+                            <div class="mfbox ulbox">
+                                <span class="material-icons md-48 left">keyboard_arrow_left</span>
+                                <ul class="sub after">
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no5.png" alt="">
+                                        </div>
+                                        <p>미랄렘<br>퍄니치</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no6.png" alt="">
+                                        </div>
+                                        <p>사미<br>케디라</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no8.png" alt="">
+                                        </div>
+                                        <p>아론<br>램지</p>
+                                    </li>
+    
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no14.png" alt="">
+                                        </div>
+                                        <p>블레즈<br>마튀디</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no25.png" alt="">
+                                        </div>
+                                        <p>아드리앙<br>라비오</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no30.png" alt="">
+                                        </div>
+                                        <p>로드리고<br>벤탄쿠르</p>
+                                    </li>
+                                </ul>
+                                <span class="material-icons md-48 right">keyboard_arrow_right</span>
+                            </div>
+                        </li>
+                        <li class="df"><a href="#">DEFENDER</a>
+                            <div class="dfbox ulbox">
+                                <span class="material-icons md-48 left show">keyboard_arrow_left</span>
+                                <ul class="sub after">
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no2.png" alt="">
+                                        </div>
+                                        <p>마티아<br>데실리오</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no3.png" alt="">
+                                        </div>
+                                        <p>조르조<br>키엘리니</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no4.png" alt="">
+                                        </div>
+                                        <p>마테이스<br>더리흐트</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no12.png" alt="">
+                                        </div>
+                                        <p>알렉스<br>산드루</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no13.png" alt="">
+                                        </div>
+                                        <p>다닐루<br>루이스</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no19.png" alt="">
+                                        </div>
+                                        <p>레오나르도<br>보누치</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no24.png" alt="">
+                                        </div>
+                                        <p>다니엘레<br>루가니</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no28.png" alt="">
+                                        </div>
+                                        <p>메리흐<br>데미랄</p>
+                                    </li>
+                                </ul>
+                                <span class="material-icons md-48 right">keyboard_arrow_right</span>
+                            </div>
+                        </li>
+                        <li class="gk"><a href="#">GOALKEEPER</a>
+                            <div class="gkbox">
+                                <ul class="sub after">
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/gk1.png" alt="">
+                                        </div>
+                                        <p>보이치에흐<br>슈체스니</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no31.png" alt="">
+                                        </div>
+                                        <p>카를로<br>핀솔리오</p>
+                                    </li>
+                                    <li>
+                                        <div class="pimg">
+                                            <img src="img/no77.png" alt="">
+                                        </div>
+                                        <p>잔루이지<br>부폰</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="con4">
+                <div class="contentstitle con4title">유니폼</div>
+                <div class="con4box">
+                    <div class="uniform after">
+                        <div class="home">
+                            <div class="uimg">
+                                <img src="img/home.png" alt="">
+                            </div>
+                            <p>HOME</p>
+                        </div>
+                        <div class="away">
+                            <div class="uimg">
+                                <img src="img/away.png" alt="">
+                            </div>
+                            <p>AWAY</p>
+                        </div>
+                        <div class="unigk">
+                            <div class="uimg">
+                                <img src="img/gk.png" alt="">
+                            </div>
+                            <p>GK</p>
+                        </div>
+                    </div>
+                    <div class="sponser after">
+                        <div class="sponser1">
+                            <div class="slogo">
+                                <img src="img/Jeep_logo.png" alt="">
+                            </div>
+                            <p>메인 스폰서</p>
+                        </div>
+                        <div class="maker">
+                            <div class="makerlogo after">
+                                <div class="mlogo">
+                                    <div class="logo1">
+                                        <img src="img/adidas_logo.png" alt="">
+                                    </div>
+                                    <div class="logo2">
+                                        <img src="img/palace_logo.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>유니폼 메이커</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="con5">
+                <div class="contentstitle con5title">파트너</div>
+                <div class="con5box">
+                    <p class="con5s">Fino alla fine</p>
+                    <p class="con5t">영문으로 하면 until the end, 번역하면 끝까지라는 뜻<br>
+                        “ 끝날때 까지 끝난게 아니다. ” 라는 유벤투스의 위닝멘탈리티를 상징함.
+                    </p>
+                    <div class="con5logo after">
+                        <div class="con5logo1"></div>
+                        <div class="con5logo2"></div>
+                        <div class="con5logo3"></div>
+                        <div class="con5logo4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="con6">
+                <div class="con6box">
+                    <div class="con6logo">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <ul class="sns">
+                        <li><a href="https://www.facebook.com/Juventus/" target="_blank">
+                                <i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://instagram.com/juventus" target="_blank">
+                                <i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/juventus" target="_blank">
+                                <i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://twitter.com/juventusfc" target="_blank">
+                                <i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.snapchat.com/add/juventus" target="_blank"><i
+                                    class="fab fa-snapchat"></i>
+                            </a></li>
+                        <li><a href="https://www.linkedin.com/company/juventus-football-club" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i>
+                            </a></li>
+                    </ul>
+                    <div class="nav2" id="nav">
+                        <ul class="navul after">
+                            <li><a href="#">Main</a></li>
+                            <li><a href="#">Stadium</a></li>
+                            <li><a href="#">Player</a></li>
+                            <li><a href="#">Uniform</a></li>
+                            <li><a href="#">Partner</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

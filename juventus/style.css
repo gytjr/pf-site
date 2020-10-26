@@ -1,0 +1,684 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.after::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: .8rem;
+}
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.wrap .logo {
+    z-index: 999;
+    position: fixed;
+    top: 70px;
+    left: 138px;
+}
+
+/* ----------------nav------------------ */
+
+.wrap .nav {
+    width: 165px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+    position: fixed;
+    color: #fff;
+    z-index: 999;
+    text-align: right;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+
+.wrap .nav li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-right: 1rem;
+    font-weight: 300;
+}
+
+.wrap .nav li:last-of-type {
+    margin-bottom: 0;
+}
+
+.wrap .nav li::before {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    content: "";
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(-150%, -50%);
+}
+
+.wrap .nav li.on a{
+    color: #ff5167;
+    font-weight: 500;
+}
+
+.wrap .nav li.on::before {
+    background: #ff5167;
+}
+
+.contents {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* ----------------con1------------------ */
+
+.con1 {
+    background: url(img/con1bg1.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 55;
+}
+
+.con1box {
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.con1text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.con1box .maintitle {
+    font-size: 114px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.con1box .subtitle {
+    display: inline-block;
+    font-size: 82px;
+    font-weight: 300;
+    border-bottom: 3px solid #fff;
+}
+
+/* ----------------con2------------------ */
+.contentstitle {
+
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+    top: 70px;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.con2 {
+    width: 100vw;
+    height: 100%;
+    background: url(img/con2bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.con2box {
+    position: absolute;
+    width: 62rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.con2box .con2left {
+    width: 48%;
+    height: 30rem;
+    background: url(img/con2.jpg) no-repeat;
+    background-size: cover;
+    margin-right: 2%;
+    float: left;
+}
+
+.con2box .con2right {
+    width: 48%;
+    float: left;
+    height: 20rem;
+    margin: 5rem 0;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.con2right1 li {
+    display: none;
+}
+
+.con2right1 li.on {
+    display: block;
+}
+
+.con2righttext .title{
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.con2righttext .subtitle{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.con2righttext .text{
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.con2 #map {
+    width: 100%;
+    height: 16rem;
+    background: #000;
+}
+
+.con2nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+.con2nav li {
+    margin-right: 5px;
+    float: left;
+}
+
+.con2nav li:last-of-type {
+    margin-right: 0;
+}
+
+.con2nav li a {
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 1px solid #ff5167;
+    border-radius: 50%;
+}
+
+.con2nav li.on a {
+    border: 1px solid #ff5167;
+    background: #ff5167
+}
+
+/* ----------------con3----------------- */
+
+.con3 {
+    width: 100%;
+    height: 100vh;
+    background: url(img/con3bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.con3box {
+    width: 1240px;
+    margin: 150px auto;
+    overflow: hidden;
+}
+
+.con3 .player li a {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2.4rem;
+    width: 100%;
+}
+
+.con3 .sub {
+    width: 120%;
+    display: none;
+    position: relative;
+}
+
+.con3 .ulbox {
+    width: 100%;
+    position: relative;
+}
+
+.con3 .ulbox .btn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.con3 .ulbox .material-icons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.con3 .ulbox .left {
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.con3 .ulbox .right {
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.con3 .dfbox .right {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.con3 .sub li {
+    float: left;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 2%;
+}
+
+.con3 .sub li:hover .pimg img {
+    transform: scale(1.1);
+}
+
+.con3 .forward .sub li {
+    width: 15%;
+}
+
+.con3 .mf .sub li {
+    width: 15%;
+}
+
+.con3 .df .sub {
+    width: 160%;
+    display: none;
+}
+
+.con3 .df .sub li {
+    width: 10.75%;
+}
+
+.con3 .gk .sub li {
+    width: 15%;
+}
+
+.con3 .sub li:last-of-type {
+    margin-right: 0;
+}
+
+.con3 .pimg {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.con3 .pimg img {
+    width: 90%;
+    height: auto;
+    transition: all 0.5s;
+}
+
+/* ----------------con4----------------- */
+
+.con4 {
+    width: 100%;
+    height: 100vh;
+    background: url(img/con4bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.con4box {
+    position: absolute;
+    width: 62rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    margin: 0 auto;
+}
+
+.con4 .uniform {
+    margin-bottom: 20px;
+}
+
+.con4 .uniform>div {
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.con4 .uniform>div:hover .uimg img{
+    transform: scale(1.1);
+}
+
+.con4 .uniform>div:last-of-type {
+    margin-right: 0;
+}
+
+.con4 .uniform>div p {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.con4 .uimg {
+    display: inline-block;
+    width: 75%;
+    height: 75%;
+    margin: 15px 0;
+}
+
+.con4 .uimg img {
+    width: 90%;
+    height: auto;
+    transition: all 0.5s;
+}
+
+.con4 .sponser>div {
+    width: 49%;
+    margin-right: 2%;
+    float: left;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.con4 .slogo {
+    width: 100%;
+    height: 110px;
+    margin: 15px 0;
+}
+
+.con4 .slogo img {
+    width: 45%;
+    height: 100%;
+}
+
+.con4 .sponser .maker {
+    margin-right: 0;
+}
+
+.con4 .makerlogo>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.con4 .mlogo>div {
+    width: 100%;
+}
+
+.con4 .mlogo {
+    height: 110px;
+    margin: 15px auto;
+}
+
+.con4 .mlogo img {
+    width: auto;
+    height: 100%;
+}
+
+/* ----------------con5----------------- */
+
+.con5 {
+    width: 100vw;
+    height: 100%;
+    background: url(img/con5bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.con5box {
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    width: 62rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.con5box .con5s {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.con5box .con5t {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 40px 0;
+}
+
+.con5logo {
+    width: 100%;
+}
+
+.con5logo>div {
+    width: 49%;
+    height: 85px;
+    float: left;
+    margin-right: 2%;
+}
+
+.con5logo>div:nth-last-of-type(even) {
+    margin-right: 0;
+}
+
+.con5logo>.con5logo1 {
+    background: url(img/Jeep_logo.png) no-repeat center;
+    background-size: contain;
+    margin-bottom: 20px;
+}
+
+.con5logo>.con5logo2 {
+    background: url(img/adidas_logo.png) no-repeat center;
+    background-size: contain;
+    margin-bottom: 30px;
+}
+
+.con5logo>.con5logo4 {
+
+    background: url(img/konami_logo.png) no-repeat center;
+    background-size: contain;
+}
+
+.con5logo>.con5logo3 {
+    background: url(img/allianz_logo.png) no-repeat center;
+    background-size: contain;
+}
+
+/* ----------------con6----------------- */
+
+.con6 {
+    width: 100%;
+    height: 40vh;
+    background: #000;
+    position: relative;
+}
+
+.con6box {
+    width: 100%;
+    position: absolute;
+    width: 1240px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.con6box .con6logo {
+    width: 100%;
+    text-align: center;
+}
+
+.sns {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.sns li {
+    margin-right: 3%;
+    text-align: center;
+}
+
+.sns li a:hover {
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.sns li a {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: 3px solid #555;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #555;
+    line-height: 50px;
+}
+
+.con6 .nav2 {
+    width: 50%;
+    color: #333;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.con6 .nav2 ul li {
+    width: 18.4%;
+    margin-right: 2%;
+    float: left;
+    position: relative;
+}
+
+.con6 .nav2 ul li:last-of-type {
+    margin-right: 0;
+}
+
+.con6 .nav2 ul li a {
+    display: block;
+}
+
+.con6 .nav2 ul li a:hover {
+    color: #fff;
+}
+
+.con6 .nav2 ul li a::after {
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 16px;
+    background: #333;
+    content: "";
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+
+.con6 .nav2 ul li:last-of-type a::after {
+    display: none;
+}
+
+
+
+
+@media (max-width : 1680px) {
+    html {
+        font-size: 18px;
+    }
+
+    .wrap .logo {
+        z-index: 999;
+        position: fixed;
+        top: 70px;
+        left: 50px;
+    }
+}
+
+@media (max-width : 1550px)  {
+    .con1 {
+        background: url(img/con1bg1.jpg) no-repeat 50% center;
+    }
+
+    .con3box {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media (max-width : 1415px) {
+    .wrap .nav {
+        width: 155px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40px;
+        position: fixed;
+        color: #fff;
+        z-index: 999;
+        text-align: right;
+        padding: 40px;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 1rem;
+        box-sizing: border-box;
+    }
+}
