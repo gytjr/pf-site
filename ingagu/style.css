@@ -1393,5 +1393,14 @@ footer {
     .panelinner {
         width: 70%;
     }
+
+    .panelsub>li>a {
+        font-size: 12px;
+    }
+
+    .footermenu {
+        width: 100%;
+        font-size: 14px;
+    }
     
 }
