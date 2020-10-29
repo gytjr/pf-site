@@ -492,13 +492,13 @@ a {
     background-size: cover;
 }
 
-.con3 li {
+.con3 .btn {
     position: absolute;
     bottom: 30px;
     right: 40px;
 }
 
-.con3 li a{
+.con3 .btn a{
     display: inline-block;
     padding: 10px 40px;
     text-align: center;
