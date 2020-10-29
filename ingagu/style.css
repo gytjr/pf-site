@@ -115,12 +115,12 @@ header>.menu>li>a {
     height: 64px;
 }
 
-header>.menu2>.a {
+header>.menu2>.menu2_a {
     font-weight: 100;
     font-size: 9px;
 }
 
-header>.menu2>.a>a {
+header>.menu2>.menu2_a>a {
     display: block;
     text-align: center;
     padding: 2px 10px;
