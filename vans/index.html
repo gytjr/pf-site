@@ -9,8 +9,11 @@
         integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="vansico.png">
@@ -28,7 +31,6 @@
         <div class="headerwrap">
             <div class="header after">
                 <div class="logo"></div>
-                <!-- <a href="#" class="btn"><i class="fas fa-bars"></i> -->
                 <div class="menu">
                     <ul>
                         <li><a href="slip-on.html">MULE COLLECTION</a></li>
@@ -41,14 +43,20 @@
 
         <div class="visual">
             <div class="visualimg">
-                <p>MULE COLLECTION</p>
+                <p class="active-on-visible">MULE COLLECTION</p>
+            </div>
+            <div class="visualimg2">
+                <p class="active-on-visible">MULE COLLECTION</p>
+            </div>
+            <div class="visualimg3">
+                <p class="active-on-visible">MULE COLLECTION</p>
             </div>
         </div>
 
         <div class="contents">
 
             <div class="con1">
-                <div class="con1title">MULE FAMILY</div>
+                <div class="con1title active-on-visible">MULE FAMILY</div>
                 <ul class="con1btn">
                     <li class="on"><a href="#">Old Skool</a></li>
                     <li><a href="#">Slip-on</a></li>
@@ -61,10 +69,10 @@
 
                         <div class="con1textbox">
                             <div class="con1text otext">
-                                <p class="title">올드스쿨 뮬</p>
-                                <p class="subtitle">Old Skool MULE</p>
-                                <p class="price">₩ 69‚000</p>
-                                <p class="text">힐 컵(Heel Cup) 부분을 클래식 제품보다 50% 이상 낮게 설계해 쉽게 착용하면서도 동시에 발을 최소한으로 잡아주어
+                                <p class="title active-on-visible">올드스쿨 뮬</p>
+                                <p class="subtitle active-on-visible">Old Skool MULE</p>
+                                <p class="price active-on-visible">₩ 69‚000</p>
+                                <p class="text active-on-visible">힐 컵(Heel Cup) 부분을 클래식 제품보다 50% 이상 낮게 설계해 쉽게 착용하면서도 동시에 발을 최소한으로 잡아주어
                                     활동성을 높혔습니다.</p>
                                 <div class="btn"><a href="slip-on.html">View More +</a></div>
                                 <div class="oimg-t after">
@@ -83,10 +91,10 @@
 
                         <div class="con1textbox">
                             <div class="con1text stext">
-                                <p class="title">슬립온 뮬</p>
-                                <p class="subtitle">Slip-on MULE</p>
-                                <p class="price">₩ 59‚000</p>
-                                <p class="text">힐 컵(Heel Cup) 부분을 클래식 제품보다 50% 이상 낮게 설계해 쉽게 착용하면서도 동시에 발을 최소한으로 잡아주어
+                                <p class="title active-on-visible">슬립온 뮬</p>
+                                <p class="subtitle active-on-visible">Slip-on MULE</p>
+                                <p class="price active-on-visible">₩ 59‚000</p>
+                                <p class="text active-on-visible">힐 컵(Heel Cup) 부분을 클래식 제품보다 50% 이상 낮게 설계해 쉽게 착용하면서도 동시에 발을 최소한으로 잡아주어
                                     활동성을 높혔습니다.</p>
                                 <div class="btn"><a href="slip-on.html">View More +</a></div>
                                 <div class="slidebox">
@@ -113,7 +121,7 @@
 
 
             <div class="con2 after">
-                <div class="con2textbox">
+                <div class="con2textbox  active-on-visible">
                     <div class="con2text">
                         <div class="logo"></div>
                         <p class="title">MULE<br>COLLECTION</p>
@@ -136,7 +144,7 @@
 
                     <div class="foot after">
                         <div class="img" data-aos="zoom-in" data-aos-duration="500"></div>
-                        <div class="textbox">
+                        <div class="textbox" data-aos="fade-left" data-aos-duration="500">
                             <div class="title">FOOT THE BILL<br>프로젝트</div>
                             <div class="subtitle">
                                 소규모 비즈니스를 돕기 위한<br>VANS 커스텀 지원 프로젝트
@@ -154,7 +162,7 @@
                     </div>
 
                     <div class="wall after">
-                        <div class="textbox">
+                        <div class="textbox" data-aos="fade-right" data-aos-duration="500">
                             <div class="title">THIS IS OFF THE WALL<br>켐페인</div>
                             <div class="subtitle">
                                 VANS에서 브랜드 캠페인의 새로운 챕터,<br>'DIY' 스케이트 커뮤니티를 새롭게 공개했습니다.
