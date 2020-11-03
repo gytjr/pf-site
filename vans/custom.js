@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    
     let didScroll;
     var lastScrollTop = 0;
     var delta = 5; // 동작의 구현이 시작되는 위치
