@@ -66,7 +66,7 @@ a {
 .header .menu {
     position: absolute;
     top: 50%;
-    right: 0;
+    right : 0;
     transform: translateY(-50%);
 }
 
@@ -96,18 +96,6 @@ a {
     padding: 0 0 0 20px;
     border: none;
 }
-
-/* .header .btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    font-size: 30px;
-}
-
-.header .btn:hover {
-    animation: btn 1s alternate infinite;
-} */
 
 @keyframes btn {
     0%  {
@@ -149,7 +137,7 @@ a {
     position: absolute;
     color: #fff;
     font-size: 60px;
-    top: 80%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 5px 5px 5px #000;
@@ -159,8 +147,7 @@ a {
 
 .visual p.active {
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
 }
 
 /* -----------------contents----------------- */
@@ -273,7 +260,7 @@ a {
 .con1text .text {
     font-weight: 300;
     margin: 30px 0;
-}
+} 
 
 .con1text .btn a{
     text-align: center;
@@ -460,7 +447,7 @@ a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding-left: 340px;
+    padding-left: 17.708%;
     box-sizing: border-box;
 }
 
@@ -639,4 +626,248 @@ a {
     color: #8d9293;
     font-size: 14px;
     font-weight: 200;
+}
+
+@media (max-width : 1310px) {
+    .slidebox .iconleft {
+        left: 0px;
+    }
+    
+    .slidebox .iconright {
+        right: 0px;
+    }
+}
+
+@media (max-width : 1280px) {
+    .header .menu {
+        right: 10%;
+    }
+}
+
+@media (max-width : 1240px) {
+
+    .header {
+        width: 100%;
+    }
+
+    .header .menu {
+        right: 5%;
+    }
+   
+    .con1text {
+        width: 50%;
+        padding: 80px 0px 0 87px;
+    }
+
+    .con3box {
+        width: 100%;
+    }
+
+    .footer {
+        width: 90%;
+    }
+
+    .footer2 {
+        width: 90%;
+    }
+}
+
+@media (max-width : 1239px) {
+    .con1img {
+        margin: 0 auto;
+    }
+    .con1box>div>.img{
+        width: 50%;
+        height: 250px;
+    }
+
+    .con1text .subtitle{
+        margin: 0px;
+    }
+
+    .con1text .text {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .con1text .btn {
+        text-align: center;
+    }
+
+    .con1text .oimg-t {
+        margin: 0 auto;
+    }
+
+    .con1text .sslide {
+        width: 100%;
+        margin: 0 auto;
+        overflow: visible;
+    }
+
+    .con1text .simg-t {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .con1text .oimg-t>div {
+        width: 30%;
+    }
+
+    .con1text .simg-t>div {
+        width: 30%;
+        min-width: 160px;
+        max-width: 162px;
+        margin-top: 10px;
+    }
+
+    .slidebox ion-icon {
+        display: none;
+    }
+    
+    .old1 .oimg {
+        background: url(img/con1o.jpg) no-repeat center;
+        background-position: 50% 60%;
+    }
+
+    .con1text {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateY(0%);
+        padding: 0;
+    }
+
+    .con1text>p {
+        text-align: center;
+    }
+}
+
+@media (max-width : 1040px) {
+    .con2 {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .con2 .con2textbox {
+        width: 389px;
+        height: 600px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .con2 .con2text {
+        padding-left: 0;
+    }
+
+    .con2 .con2img {
+        width: 100%;
+        height: 300px;
+        background: url(img/con2.jpg) no-repeat center 20%;
+    }
+
+    .con3box>div>div {
+        width: 90%;
+        height: 400px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .con3box>div>.textbox {
+        height: auto;
+    }
+
+    .con3 .title {
+        text-align: center;
+    }
+
+    .con3 .subtitle {
+        text-align: center;
+    }
+
+    .con3 .btn {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .con3 .wall {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+}
+
+@media (max-width : 700px) {
+    .header .menu {
+        width: 70%;
+    }
+    .header .menu ul li {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .visual>div {
+        height: 500px;
+    }
+
+    .visual p.active {
+        transform: translate(-50%,-100%);
+    }
+
+    .visual .visualimg {
+        background-position: unset;
+        background-size: auto 500px;
+    }
+
+    .con1text {
+        height: auto;
+    }
+
+    .oimg-t {
+        display: none;
+    }
+
+    .slidebox {
+        display: none;
+    }
+
+    .con2 {
+        margin: 50px auto;
+    }
+    
+
+    .footer {
+        font-size: 11px;
+    }
+
+    .footer2 {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .header .menu ul li {
+        font-size: 7px;
+    }
+
+    .visual p {
+        font-size: 50px;
+    }
+
+    .footer>div {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        margin-right: 0;
+    }
+
+    .footer .title {
+        margin: 15px 0;
+    }
+    
 }
