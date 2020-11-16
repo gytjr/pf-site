@@ -1,0 +1,250 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Montserrat','Nanum Gothic', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.after::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+::selection {
+    background: #f68084;
+}
+
+/* ------------ nav ---------------- */
+.nav {
+    color: #fff;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    padding: 0 4rem;
+    min-height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.nav .logo .homebtn {
+    font-size: 36px;
+}
+
+.menu-trigger {
+    position: relative;
+    width: 30px;
+    height: 20px;
+}
+
+.menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.menu-trigger.active span:nth-of-type(2) {
+    left: 200%;
+    opacity: 0;
+    -webkit-animation: active-menu-bar .8s forwards;
+    animation: active-menu-bar .8s forwards;
+}
+
+@-webkit-keyframes active-menu-bar {
+    100% {
+        height: 0;
+    }
+}
+
+@keyframes active-menu-bar {
+    100% {
+        height: 0;
+    }
+}
+
+.menu-trigger.active span:nth-of-type(3) {
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+}
+
+/* ------------ main ---------------- */
+
+.main {
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background: url(img/main.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.main .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.main .title {
+    font-size: 20px;
+}
+
+.main .body {
+    font-size: 48px;
+    font-weight: 700;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    -webkit-background-clip : text;
+    color: transparent;
+}
+
+.main .body2 {
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+.main .scroll {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 5vh;
+    transform: translateX(-50%);
+    animation: ani-scroll 1s alternate infinite;
+}
+
+@keyframes ani-scroll {
+    100% {
+        bottom: 6vh;
+    }
+}
+
+/* ------------ aboutme ---------------- */
+.aboutme {
+    background: #191919;
+    position: relative;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.aboutme>.title{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    -webkit-background-clip : text;
+    color: transparent;
+}
+
+.aboutme .con {
+    padding: 100px 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutme .profileleft {
+    width: 35%;
+    text-align: right;
+}
+
+.aboutme .profilecenter {
+    width: 20%;
+    border-radius: 50%;
+    background: url(img/profile.jpg) center;
+    background-size: cover;
+    margin: 0px 5%;
+}
+
+.aboutme .profilecenter::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.aboutme .profileright {
+    width: 35%;
+}
+
+.aboutme .con h3 {
+    padding: 20px 0 10px;
+}
+
+.github::before {
+    content: "\ebdd";
+    font-family: 'xeicon';
+    font-size: 20px;
+}
+
+.aboutme .con2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.aboutme .con2 ul {
+    width: 33.3333%;
+    text-align: center;
+}
+
+.aboutme .con2 .title {
+    margin-bottom: 15px;
+}
+
+.aboutme .con2 .value {
+    margin : 5px 0;
+}
+
+.aboutme .con2 .date {
+    font-size: 13px;
+    color: #a8a8a8;
+}
+
+.aboutme .con2 .career .body .value span {
+    font-size: 11px;
+}
+
