@@ -247,9 +247,10 @@ a {
 .aboutme .con2 .career .body .value span {
     font-size: 11px;
 }
+/* ------------ skill ------------ */
 
 .skill {
-    background: #fff;
+    background: #f7f7f7;
     position: relative;
     color: #191919;
     padding: 100px 0;
@@ -259,7 +260,84 @@ a {
     font-size: 48px;
     font-weight: 700;
     text-align: center;
-    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
-    -webkit-background-clip : text;
-    color: transparent;
+    color: #f68084;
+}
+
+.skill>.body {
+    padding: 100px 5rem;
+}
+
+.skill .body>.con{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill .body>.con>div {
+    width: 23.5%;
+    margin-right: 2%;
+    margin-bottom: 50px;
+}
+
+.skill .body>.con>div:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.skill .body>.con .text {
+    text-align: center;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.skill .body>.con .text>h3 {
+    margin: 20px;
+}
+
+.skill .body>.con .text>p {
+    line-height: 24px;
+}
+
+/* 그래프 */
+
+.circle-chart {
+    display: block;
+    margin: 0 auto 20px;
+    width: 30%;
+    height: auto;
+}
+
+.circle-chart__background {
+    stroke: #efefef;
+    stroke-width: 2;
+    fill: none;
+}
+
+.circle-chart__circle {
+    animation: circle-chart-fill 2s reverse;
+    transform: rotate(-90deg);
+    transform-origin: center;
+
+    stroke: #f68084;
+    stroke-width: 2;
+    stroke-linecap: round;
+    fill: none;
+}
+
+.circle-chart__info {
+    animation: circle-chart-appear 2s forwards;
+    opacity: 0;
+    transform: translateY(0.3em);
+}
+
+@keyframes circle-chart-fill {
+    to {
+        stroke-dasharray: 0 100;
+    }
+}
+
+@keyframes circle-chart-appear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
