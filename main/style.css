@@ -264,7 +264,7 @@ a {
 }
 
 .skill>.body {
-    padding: 100px 5rem;
+    padding: 100px 5rem 0;
 }
 
 .skill .body>.con{
@@ -340,4 +340,129 @@ a {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* --------------- work --------- */
+
+.work {
+    background: #191919;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.work>.title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: #719cff;
+}
+
+.work .con {
+    padding: 100px 5rem;
+}
+
+.work .con>.works {
+    display: flex;
+    justify-content: space-between;
+    margin: 150px 0;
+}
+
+.work .con>.works>div {
+    width: 40%;
+}
+
+.work .con>.works .mockup{
+    width: 50%;
+    height: 600px;
+}
+
+.work .con>.works .text {
+    position: relative;
+}
+
+.work .con>.works .text_title {
+    text-align: center;
+    font-size: 40px;
+    color: #a6c0fe;
+    font-weight: 600;
+}
+
+.work .con>.works .sub_title {
+    text-align: center;
+    margin: 10px 0 20px;
+    color: #999;
+    font-size: 14px;
+}
+
+.work .con>.works .text {
+    text-align: center;
+    line-height: 25px;
+}
+
+.work .con>.works .btn>a {
+    display: inline-block;
+    background: #a6c0fe;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 30px 0;
+}
+
+.work .con>.works .git {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.work .con>.works .git>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .con>.works .git>ul>li {
+    width: 33.3333%;
+}
+
+.work .con>.works .git_title {
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    color: #999;
+}
+
+.work .con>.works .git_body>li {
+    padding: 10px 0;
+    border-bottom: 1px solid #808080;
+    box-sizing: border-box;
+}
+.work .con>.works .git_body .gitbtn {
+    padding: 3px 5px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.work .con>.works .git_body .githtml {
+    background: #f06529;
+}
+
+.work .con>.works .git_body .gitcss {
+    background: #2965f1;
+}
+
+.work .con>.works .git_body .gitjs {
+    background: #f0db4f;
+}
+
+.work .con>.works .git_body .gitlink>a {
+    text-decoration: underline;
+}
+
+.work .con>.ingagu .mockup {
+    background: url(img/ingagu.jpg) center;
+    background-size: cover;
+}
+
+.work .con>.vans .mockup {
+    background: url(img/vans.jpg) center;
+    background-size: cover;
 }
