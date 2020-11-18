@@ -358,7 +358,7 @@ a {
 }
 
 .work .con {
-    padding: 100px 5rem;
+    padding: 0px 5rem;
 }
 
 .work .con>.works {
@@ -466,3 +466,14 @@ a {
     background: url(img/vans.jpg) center;
     background-size: cover;
 }
+
+.work .con>.juventus .mockup {
+    background: url(img/juventus.jpg) center;
+    background-size: cover;
+}
+
+.work .con>.works:last-of-type {
+    margin-bottom: 0;
+}
+
+/* ----- contact-------- */
