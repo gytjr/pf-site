@@ -477,3 +477,51 @@ a {
 }
 
 /* ----- contact-------- */
+
+.contact {
+    background: #f7f7f7;
+    position: relative;
+    color: #191919;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact>.title{
+    font-size: 48px;
+    font-weight: 700;
+    color: #f68084;
+}
+
+.contact>.subtitle {
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.contact>.con {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 0;
+}
+
+.contact>.con>div {
+    width: 30%;
+}
+
+.contact>.con>div p {
+    margin: 20px 0 0;
+}
+
+/* ---footer---- */
+
+.footer {
+    background: #191919;
+    position: relative;
+    color: #999;
+    padding: 50px 5rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.footer .con p {
+    line-height: 30px;
+}
