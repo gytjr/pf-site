@@ -88,6 +88,7 @@ a {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    transition: 0.5s;
 }
 
 .nav .logo .homebtn {
@@ -155,6 +156,51 @@ a {
     transform: translateY(-50%) rotate(45deg);
 }
 
+/* ------------ wrap ---------------- */
+.wrap>div>.title{
+    display: flex;
+    justify-content: center;
+}
+.wrap>div>.title>.spanwrap{
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+.wrap>div>.title>.spanwrap>span {
+    overflow: hidden;
+    position: relative;
+}
+
+.wrap>div>.title>.spanwrap>span::after {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:#f68084;
+    position: absolute;
+}
+
+.wrap>div>.title>.spanwrap>span.active::after {
+    animation: block-reveal 0.7s both;
+}
+
+.wrap>div:nth-of-type(2n) .title>.spanwrap>span::after{
+    background: #719cff;
+}
+
+@keyframes block-reveal {
+    0% {
+        transform: translate(-110%, 0)
+    }
+    45%, 55% {
+        transform: translate(0, 0)
+    }
+    100% {
+        transform: translate(110%, 0)
+    }
+}
+
 /* ------------ main ---------------- */
 
 .main {
@@ -215,7 +261,7 @@ a {
     padding: 100px 0;
 }
 
-.aboutme>.title{
+.aboutme .title span{
     font-size: 48px;
     font-weight: 700;
     text-align: center;

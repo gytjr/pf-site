@@ -14,6 +14,15 @@ $(document).ready(function() {
             $('.modal').css('transform', 'translateX(100%)').css('opacity', '0');
         }
     }
+
+    // $(window).on('scroll', function(){
+    //     var scroll = $(this).scrollTop();
+    //     if (scroll >= $('.wrap>div').eq(2).offset().top && scroll < $('.wrap>div').eq(3).offset().top) {
+    //         $('.nav').css('background', 'rgba(0, 0, 0, 0.1)');
+    //     }else {
+    //         $('.nav').css('background', 'none');
+    //     }
+    // })
     
 
     // 메뉴 버튼 스크롤
@@ -24,6 +33,12 @@ $(document).ready(function() {
         burger.removeClass('active');
         modal();
         $('html,body').animate({ 'scrollTop' : $('.wrap>div').eq(i).offset().top}, 500);
+    })
+
+    $(".nav>.logo").on("click", function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
     })
     
 
