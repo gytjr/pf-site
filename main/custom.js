@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $(window).load(function(){
+        $('.loading').delay(1000).fadeOut();
+    })
     // 햄버거 버튼 애니메이션
     var burger = $('.menu-trigger');
   

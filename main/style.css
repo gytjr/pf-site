@@ -34,6 +34,39 @@ a {
     background: #f68084;
 }
 
+/* ------------ loading ---------------- */
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #191919;
+    z-index: 9990;
+}
+
+.loading .textwrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.loading .text p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    animation: loading 0.5s forwards;
+}
+
+@keyframes loading {
+    0% {
+        filter: blur(10px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
 /* ------------ modal ---------------- */
 .modal {
     background: #191919;
