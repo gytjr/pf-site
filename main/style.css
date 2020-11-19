@@ -5,6 +5,7 @@ html {
 body {
     font-size: 16px;
     font-family: 'Montserrat','Nanum Gothic', sans-serif;
+    position: relative;
 }
 
 * {
@@ -33,10 +34,52 @@ a {
     background: #f68084;
 }
 
+/* ------------ modal ---------------- */
+.modal {
+    background: #191919;
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    z-index: 3;
+    color: #fff;
+    right: 0;
+    transform: translateX(100%);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.modal .menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15vh;
+    font-weight: 800;
+    font-size: 60px;
+    height: 100%;
+}
+
+.modal .menu li {
+    height: 15%;
+    cursor: pointer;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 0.02em;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    transition: background-size 1s cubic-bezier(0.67, 0.01, 0.15, 0.98);
+    background-image: linear-gradient(180deg, #fff 0%, #fff 50%, transparent 50.1%);
+    background-position: 100% 0%;
+    background-size: 100% 0%;
+}
+
+.modal .menu li:hover {
+    background-size: 100% 200%;
+}
+
 /* ------------ nav ---------------- */
 .nav {
     color: #fff;
-    position: absolute;
+    position: fixed;
     z-index: 99;
     width: 100%;
     padding: 0 4rem;
@@ -55,6 +98,7 @@ a {
     position: relative;
     width: 30px;
     height: 20px;
+    z-index: 5;
 }
 
 .menu-trigger span {
@@ -313,7 +357,6 @@ a {
 }
 
 .circle-chart__circle {
-    animation: circle-chart-fill 2s reverse;
     transform: rotate(-90deg);
     transform-origin: center;
 
@@ -323,10 +366,18 @@ a {
     fill: none;
 }
 
+.skill .body>.con>div.active .circle-chart__circle {
+    animation: circle-chart-fill 2s reverse;
+}
+
+
 .circle-chart__info {
-    animation: circle-chart-appear 2s forwards;
     opacity: 0;
     transform: translateY(0.3em);
+}
+
+.skill .body>.con>div.active .circle-chart__info {
+    animation: circle-chart-appear 2s forwards;
 }
 
 @keyframes circle-chart-fill {
@@ -406,6 +457,11 @@ a {
     padding: 10px 30px;
     border-radius: 30px;
     margin: 30px 0;
+    transition: 0.5s;
+}
+
+.work .con>.works .btn>a:hover {
+    background: #719cff;
 }
 
 .work .con>.works .git {
