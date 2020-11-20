@@ -611,6 +611,17 @@ a {
     margin-bottom: 0;
 }
 
+.work .con>.works.backend {
+    justify-content: center;
+}
+
+.work .con>.works .sub_title2 {
+    text-align: center;
+    margin: 10px 0 0;
+    color: #999;
+    font-size: 14px;
+}
+
 /* ----- contact-------- */
 
 .contact {
