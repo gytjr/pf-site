@@ -554,6 +554,10 @@ a {
     justify-content: space-between;
 }
 
+.work .con>.works .git .icon {
+    margin-bottom: 50px;
+}
+
 .work .con>.works .git>ul>li {
     width: 33.3333%;
 }
@@ -607,12 +611,9 @@ a {
     background-size: cover;
 }
 
-.work .con>.works:last-of-type {
-    margin-bottom: 0;
-}
-
-.work .con>.works.backend {
-    justify-content: center;
+.work .con>.backend .mockup {
+    background: url(img/backend.jpg) center;
+    background-size: cover;
 }
 
 .work .con>.works .sub_title2 {
